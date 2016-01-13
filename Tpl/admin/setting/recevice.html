@@ -1,0 +1,32 @@
+<include file="public:header" />
+<!--邮件服务器设置-->
+<div class="common-form">
+    <form id="info_form" action="{:u('setting/edit')}" method="post">
+        <table width="100%" class="table_form contentWrap">
+            <tr>
+                <th width="150">提醒1 :</th>
+                <td><input type="text" name="setting[tips][tip1]" class="input-text" size="30" value="{:C('pin_tips.tip1')}"></td>
+            </tr>
+            <tr>
+                <th width="150">提醒2 :</th>
+                <td><input type="text" name="setting[tips][tip2]" class="input-text" size="30" value="{:C('pin_tips.tip2')}"></td>
+            </tr>
+            <tr>
+                <th width="150">提醒3 :</th>
+                <td><input type="text" name="setting[tips][tip3]" class="input-text" size="30" value="{:C('pin_tips.tip3')}"></td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <td><input type="hidden" name="menuid"  value="{$menuid}"/>
+                    <input type="submit" class="btn btn_submit" value="{:L('submit')}"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<include file="public:footer" />
+<script>
+</script>
+</body>
+</html>
